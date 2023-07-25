@@ -23,10 +23,10 @@ contract DemoTest is Test, IDemoEvents {
         emit Log("first setter", _ALT_NUMBER_);
         vm.expectEmit(false, false, false, true, _demoAddress);
         emit Log("second setter", _NUMBER_);
-deployCodeTo(
-    "./out/DemoMultiAssignment.sol/DemoMultiAssignment.json",
-    _demoAddress
-);
+        deployCodeTo(
+            "./out/DemoMultiAssignment.sol/DemoMultiAssignment.json",
+            _demoAddress
+        );
 
         assertEq(DemoMultiAssignment(_demoAddress).number(), _NUMBER_);
     }
