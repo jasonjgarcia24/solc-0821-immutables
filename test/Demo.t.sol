@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.20;
 
-import "forge-std/Test.sol";
+import {Test} from "forge-std/Test.sol";
 import {_NUMBER_, _ALT_NUMBER_} from "../src/DemoConstants.sol";
 import {IDemoEvents} from "../src/IDemo.sol";
 import {DemoNoAssignment} from "../src/DemoNoAssignment.sol";
